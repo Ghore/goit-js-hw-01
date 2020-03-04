@@ -1,8 +1,8 @@
 "use strict";
-let country = prompt("Выберите страну в которую желаете оформить доставку");
+const country = prompt("Выберите страну в которую желаете оформить доставку");
 let cost;
 
-switch (country) {
+switch (country.toLowerCase()) {
   case "Китай".toLowerCase():
     cost = 100;
     alert(`Доставка в вашу ${country} будет стоить ${cost} кредитов`);
